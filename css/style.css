@@ -1,0 +1,115 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+     font-weight: 400;
+     font-family: lato,sans-serif;
+     font-size: 16px;
+     line-height: 1.7;
+     padding: 30px;
+     color: #777;
+}
+
+.header{
+    height: 95vh;
+    background-image: 
+    linear-gradient(
+        to right bottom, 
+        rgba(126,213,111,0.5),
+        rgba(40,180,131,0.5)),
+        url(../img/soup-g7cf272df9_1920.jpg);
+    background-size:cover;
+    background-position: top;
+    clip-path: polygon(0 0,100% 0, 100% 70vh,0 100% );
+}
+.logo-box{
+     position: absolute;
+     top: 40px;
+     left: 40px;
+}
+
+.logo{
+/* position: relative; */
+height: 60px;
+}
+
+
+/* center div */
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary{
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+.heading-primary-main{
+    display: block;
+    font-size: 60px;
+    font-weight: 400px;
+    letter-spacing: 35px;
+    animation-name: text-movement-left;
+    animation-duration: 1s;
+    /* animation-delay: 3s; */
+    /* animation-iteration-count:3 ; */
+    animation-timing-function:ease-in ;
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 17.4px;
+    animation: text-movement-right 1s ease-out;
+
+
+}
+
+/* animations */
+@keyframes text-movement-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translate(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes text-movement-right {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+
+
+    }
+
+    80% {
+        transform: translate(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
