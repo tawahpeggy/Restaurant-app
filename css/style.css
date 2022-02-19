@@ -6,18 +6,24 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-*{
+*,
+*::after,
+*::before{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5% ;
 }
 body{
      font-weight: 400;
      font-family: lato,sans-serif;
-     font-size: 16px;
+     font-size: 1.6rem;
      line-height: 1.7;
-     padding: 30px;
+     padding: 3rem;
      color: #777;
+     box-sizing: content-box;
 }
 
 .header{
@@ -29,18 +35,18 @@ body{
         rgba(40,180,131,0.5)),
         url(../img/soup-g7cf272df9_1920.jpg);
     background-size:cover;
-    background-position: top;
+    background-position: bottom;
     clip-path: polygon(0 0,100% 0, 100% 70vh,0 100% );
 }
 .logo-box{
      position: absolute;
-     top: 40px;
-     left: 40px;
+     top: 4rem;
+     left: 4rem;
 }
 
 .logo{
 /* position: relative; */
-height: 60px;
+height: 6rem;
 }
 
 
@@ -58,15 +64,15 @@ height: 60px;
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin: 60px;
+    margin: 6rem;
 
 }
 
 .heading-primary-main{
     display: block;
-    font-size: 60px;
-    font-weight: 400px;
-    letter-spacing: 35px;
+    font-size: 6rem;
+    font-weight: 40rem;
+    letter-spacing: 3.5rem;
     animation-name: text-movement-left;
     animation-duration: 1s;
     /* animation-delay: 3s; */
@@ -76,26 +82,24 @@ height: 60px;
 
 .heading-primary-sub{
     display: block;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 17.4px;
+    letter-spacing: 1.7rem;
     animation: text-movement-right 1s ease-out;
-
-
 }
 
 /* animations */
 @keyframes text-movement-left {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
     60% {
         transform: rotate(90deg);
     }
 
     80% {
-        transform: translate(10px);
+        transform: translate(1rem);
     }
 
     100% {
@@ -106,13 +110,13 @@ height: 60px;
 @keyframes text-movement-right {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
 
 
     }
 
     80% {
-        transform: translate(-10px);
+        transform: translate(-1rem);
     }
 
     100% {
@@ -124,7 +128,7 @@ height: 60px;
 @keyframes text-movement-in-bottom {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
 
 
     }
@@ -138,20 +142,20 @@ height: 60px;
 .btn:link,.btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px ;
+    padding: 1.5rem 4rem ;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-0.3rems);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
 }
 .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
 }
 .btn-white {
     background-color: #fff;
@@ -162,7 +166,7 @@ height: 60px;
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
