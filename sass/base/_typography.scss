@@ -1,0 +1,51 @@
+.heading-primary {
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin: 6rem;
+  
+    &-main {
+      display: block;
+      font-size: 6rem;
+      font-weight: 40rem;
+      letter-spacing: 3.5rem;
+      animation-name: text-movement-left;
+      animation-duration: 1s;
+      /* animation-delay: 3s; */
+      /* animation-iteration-count:3 ; */
+      animation-timing-function: ease-in;
+    }
+  
+    &-sub {
+      display: block;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1.7rem;
+      animation: text-movement-right 1s ease-out;
+    }
+}
+  body {
+    font-weight: 400;
+    font-family: lato, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    padding: 3rem;
+    color: $color-grey-dark;
+  }
+  .heading-secondary { 
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+// text-gradient
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color:transparent;
+    transition: all .2s;
+    letter-spacing: .2rem;
+    &:hover{
+       transform: skewY(3deg) skewX(25deg) scale(1.1); 
+       text-shadow: .5rem 1rem 2rem rgba($color-black, .5) ;
+    }
+  }
+  
