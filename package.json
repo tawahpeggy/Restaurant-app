@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-app",
+  "version": "1.0.0",
+  "description": "an app for my mums restaurant management",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tawahpeggy/Restaurant-app.git"
+  },
+  "author": "tawahpeggy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tawahpeggy/Restaurant-app/issues"
+  },
+  "homepage": "https://github.com/tawahpeggy/Restaurant-app#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "live-server": "^1.2.1",
+    "save": "^2.4.0"
+  }
+}
