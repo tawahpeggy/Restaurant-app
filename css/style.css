@@ -126,7 +126,7 @@ body {
 
 .btn:active {
   transform: translateY(-0.1rem);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  box-shadow: 0.15rem 1rem 2rem rgba(0, 0, 0, 0.2); }
 
 .btn-white {
   background-color: #fff;
@@ -168,6 +168,53 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(-0.2rem); }
+
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 55%;
+    box-shadow: 0 0.15rem 4rem rgba(0, 0, 0, 0.5);
+    border-radius: .2rem;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: 3rem; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+    .composition__photo:hover {
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20;
+      outline: 1.5rem solid #55c57a; }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transition 0.3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.2s; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.5); }
 
 .header {
   height: 95vh;
@@ -211,11 +258,24 @@ body {
     width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem);
     background-color: orangered; }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 6rem) / 4);
-    background-color: orangered; }
+    width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
     width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem);
     background-color: orangered; }
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
     background-color: orangered; }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.5), rgba(40, 180, 133, 0.5)), url(../../img/nat-4.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transform: skewY(-7deg);
+  margin-top: -4rem; }
+  .section-features > * {
+    transform: skewY(7deg); }

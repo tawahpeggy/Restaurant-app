@@ -20,7 +20,7 @@
   }
   &:active {
     transform: translateY(-0.1rem);
-    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+    box-shadow: .15rem 1rem 2rem rgba($color-black, 0.2);
   }
 
   &-white {
