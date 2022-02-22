@@ -249,7 +249,7 @@ body {
   .card__picture {
     background-blend-mode: screen;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100% );
+    --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     height: 23rem;
     background-size: cover; }
     .card__picture--1 {
@@ -266,7 +266,13 @@ body {
     position: absolute;
     top: 12rem;
     right: 2rem;
+    width: 75%;
     text-align: right; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85)); }
 
 .header {
   height: 95vh;
