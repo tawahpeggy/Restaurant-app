@@ -254,6 +254,10 @@ body {
     background-size: cover; }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../../img/nat-5.jpg); }
+    .card__picture--2 {
+      background-image: url(../../img/nat-5.jpg); }
+    .card__picture--3 {
+      background-image: url(../../img/nat-5.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
