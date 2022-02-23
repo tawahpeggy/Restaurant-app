@@ -27,13 +27,14 @@
   body {
     font-weight: 400;
     font-family: lato, sans-serif;
-    font-size: $defaul-font-size;
+    font-size: $default-font-size;
     line-height: 1.7;
     padding: 3rem;
     color: $color-grey-dark;
   }
   .heading-secondary { 
     font-size: 3.5rem;
+    padding-bottom:5rem;
     text-transform: uppercase;
     font-weight: 700;
 // text-gradient
@@ -49,14 +50,14 @@
     }
   }
   .heading-tertiary {
-    font-size: $defaul-font-size;
+    font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
 
   }
 
   .paragraph { 
-    font-size:$defaul-font-size;
+    font-size:$default-font-size;
 
     &:not(:last-child) { 
       margin-bottom: 3rem;
