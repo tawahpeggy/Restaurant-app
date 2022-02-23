@@ -7,7 +7,12 @@
    padding : 6rem;
    padding-left: 12rem;
    font-size: $default-font-size;
+   transform: skewX(-12deg);
 
+    & > * {
+        transform: skewX(12deg);
+
+    }
    &__shape { 
        width: 15rem;
        height: 15rem;
@@ -16,10 +21,40 @@
        shape-outside: circle(50% at 0% 50%);
        clip-path:  circle(50% at 50% 50%);
        --webkit-clip-path:  circle(31% at 50% 50%);
-       transform: translateX(-9rem);
+       transform: translateX(-9rem)skewX(12deg);       ;
     //    background-position: cover;
+    position: relative;
    }
    &__img {
        height: 100%;
+       transform: translateX(-50%, -50%) scale(1.4);
+       backface-visibility: hidden;
+       transition: all .5s;
+   }
+   &__text {
+      transform: skew(12deg); 
+   }
+   &__caption {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, 20%);
+color: $color-white;
+text-transform: uppercase;
+font-size: 1.7rem;
+text-align: center;
+opacity: 0;
+transition: all .5s ;
+backface-visibility: hidden;
+
+   }
+   
+   &:hover &__caption {
+   opacity: 1;
+   transform: translate(-50%, -50%)
+   }
+   &:hover &__img { 
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
    }
 }
