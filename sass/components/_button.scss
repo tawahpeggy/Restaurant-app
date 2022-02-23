@@ -23,11 +23,19 @@
     box-shadow: .15rem 1rem 2rem rgba($color-black, 0.2);
   }
 
-  &-white {
+  &--white {
     background-color: $color-white;
     color: $color-grey-dark;
     &::after {
       background-color: $color-white;
+    } 
+  }  
+  
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+    &::after {
+      background-color: $color-primary;
     }
   }
   &::after {
