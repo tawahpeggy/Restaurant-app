@@ -1,8 +1,8 @@
 .story { 
+   background-color: rgba($color-white, 0.6);
    width: 75%;
    margin:  0 auto;
    box-shadow: 0 3rem 6rem rgba($color-black, .1);
-   background-color:$color-white;
    border-radius: .3rem; 
    padding : 6rem;
    padding-left: 12rem;
@@ -22,7 +22,6 @@
        clip-path:  circle(50% at 50% 50%);
        --webkit-clip-path:  circle(31% at 50% 50%);
        transform: translateX(-9rem)skewX(12deg);       ;
-    //    background-position: cover;
     position: relative;
    }
    &__img {
