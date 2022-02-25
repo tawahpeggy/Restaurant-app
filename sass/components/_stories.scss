@@ -8,7 +8,7 @@
   padding-left: 12rem;
   font-size: $default-font-size;
   transform: skewX(-12deg);
-  margin-bottom: 10rem;
+//   margin-bottom: 10rem;
 
   & > * {
     transform: skewX(12deg);
@@ -27,7 +27,7 @@
 
   &__img {
     height: 100%;
-    transform: translateX(-4rem) scale(1.4);
+    transform: translateX(-4rem) scale(1);
     backface-visibility: hidden;
     transition: all 0.5s;
     backface-visibility: hidden;

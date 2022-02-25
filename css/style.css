@@ -332,8 +332,7 @@ body {
   padding: 6rem;
   padding-left: 12rem;
   font-size: 1.6rem;
-  transform: skewX(-12deg);
-  margin-bottom: 10rem; }
+  transform: skewX(-12deg); }
   .story > * {
     transform: skewX(12deg); }
   .story__shape {
@@ -348,7 +347,7 @@ body {
     position: relative; }
   .story__img {
     height: 100%;
-    transform: translateX(-4rem) scale(1.4);
+    transform: translateX(-4rem) scale(1);
     backface-visibility: hidden;
     transition: all 0.5s;
     backface-visibility: hidden; }
