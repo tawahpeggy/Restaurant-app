@@ -417,7 +417,8 @@ body {
 
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .header {
   height: 95vh;

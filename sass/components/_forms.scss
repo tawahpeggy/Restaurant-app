@@ -39,6 +39,7 @@
 &__input:placeholder-shown + &__label {
 opacity: 0;
 visibility: hidden;
+transform: translateY(-4rem);
 
 }
 }
