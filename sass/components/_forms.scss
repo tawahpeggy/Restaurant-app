@@ -5,17 +5,24 @@
     &__input {
         font-size: 1.5em;
         font-family: inherit;
+        color:inherit;
         padding: 1.5rem 2rem;
         border-radius: 2px;
         background-color: rgba($color-white, 0.5);
         border:none;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
     }
 
-    &__input:focus {
+    &:focus {
         outline:none;
         box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
         border-bottom: .3rem  solid $color-primary;
 
+    }
+    &:focus:invalid {
+        border-bottom: 3px solid $color-secondary-dark;
     }
     &::-webkit-input-placeholder {
         color: $color-grey-dark-2 ;

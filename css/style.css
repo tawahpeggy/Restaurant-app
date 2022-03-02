@@ -390,10 +390,14 @@ body {
 .form__input {
   font-size: 1.5em;
   font-family: inherit;
+  color: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.5);
-  border: none; }
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block; }
 
 .form__input:focus {
   outline: none;
