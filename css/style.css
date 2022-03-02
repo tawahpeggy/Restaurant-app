@@ -389,10 +389,19 @@ body {
 
 .form__input {
   font-size: 1.5em;
+  font-family: inherit;
   padding: 1.5rem 2rem;
   border-radius: 2px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none; }
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 0.3rem solid #55c57a; }
+
+.form::-webkit-input-placeholder {
+  color: #999; }
 
 .header {
   height: 95vh;

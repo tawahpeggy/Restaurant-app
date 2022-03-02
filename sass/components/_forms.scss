@@ -17,4 +17,7 @@
         border-bottom: .3rem  solid $color-primary;
 
     }
+    &::-webkit-input-placeholder {
+        color: $color-grey-dark-2 ;
+    }
 }
