@@ -8,12 +8,12 @@
         color:inherit;
         padding: 1.5rem 2rem;
         border-radius: 2px;
-        background-color: rgba($color-white, 0.5);
+        background-color: $color-white;
         border:none;
         border-bottom: 3px solid transparent;
         width: 90%;
         display: block;
-    }
+    
 
     &:focus {
         outline:none;
@@ -27,4 +27,18 @@
     &::-webkit-input-placeholder {
         color: $color-grey-dark-2 ;
     }
+}
+&__label {
+    font-size: 1.2rem;
+    font-weight: 700px;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    transition: all .3s;
+}
+&__input:placeholder-shown + &__label {
+opacity: 0;
+visibility: hidden;
+
+}
 }
