@@ -384,6 +384,9 @@ body {
     height: 100%;
     object-fit: cover; }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
 .form__input {
   font-size: 1.5em;
   padding: 1.5rem 2rem;
