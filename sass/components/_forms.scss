@@ -47,11 +47,15 @@ transform: translateY(-4rem);
     display: inline-block;
 }
 
+&__radio-input {
+    display: none;
+}
+
 &__radio-label {
     font-size: $default-font-size;
     cursor: pointer;
     position: relative;
-    padding-left: 3rem;
+    padding-left: 4.5rem;
 }
 &__radio-button {
         height: 3rem;
@@ -75,8 +79,9 @@ transform: translateY(-4rem);
         transform: translate(-50% -50%);
         background-color:$color-primary ;
         opacity: 0;
-
-
     }
+}
+&__radio-input:checked~&__radio-label &__radio-button::after {
+    opacity: 1;
 }
 }
