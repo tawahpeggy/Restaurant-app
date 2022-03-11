@@ -496,7 +496,8 @@ body {
   .footer__copyright {
     border-top: 0.1rem solid #777;
     padding-top: 2rem;
-    float: right; }
+    float: right;
+    width: 80%; }
 
 .header {
   height: 95vh;
