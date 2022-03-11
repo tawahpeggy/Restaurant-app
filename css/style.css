@@ -657,22 +657,51 @@ body {
   transform: rotate(-135deg); }
 
 .popup {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100vh;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9999; }
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s; }
   .popup__content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
     background-color: #fff;
-    color: #000;
     width: 75%;
-    height: 50rem;
-    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    display: table;
+    border-radius: 3px; }
+  .popup__left {
+    width: 33.33333%;
+    display: table-cell; }
+  .popup__right {
+    width: 66.6666667;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 .section-about {
   background-color: #f7f7f7;
