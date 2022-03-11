@@ -656,6 +656,24 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
+.popup {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #000;
+    width: 75%;
+    height: 50rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2); }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 3rem 0 25rem 0; }
