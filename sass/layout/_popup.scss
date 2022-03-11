@@ -10,11 +10,32 @@
   visibility: hidden;
 
   &:target {
-      opacity: 1;
-      visibility: visible;
-      transition: all .3s
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
   }
+  target &__content {
+opacity: 1;
+transform: translate(-50%, -50%) scale(1);
+  }
+&__close {
+    &:link,
+    &:visited {
+        color: $color-grey-dark;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        font-size: 3rem;
+        text-decoration: none;
+        display: inline-block;
+        line-height: 1;
 
+
+    }
+    &:hover {
+        color: $color-primary;
+    }
+}
   &__content {
     @include centerDiv;
     overflow: hidden;
@@ -23,6 +44,8 @@
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     display: table;
     border-radius: 3px;
+    transform: translate(-50,-50) scale(.25);
+    transition: all .10s .2s;
   }
   &__left {
     width: 33.33333%;
@@ -39,16 +62,15 @@
     width: 100%;
   }
   &__text {
-      font-size: 1.4rem;
-      margin-bottom: 4rem;
-      
-      -moz-column-count: 2;
-      -moz-column-gap: 4rem;
-      -moz-column-rule: 1px solid $color-grey-light-2;
-      -moz-hyphens: auto;
-      -ms-hyphens: auto;
-      -webkit-hyphens: auto;
-      hyphens: auto;
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
 
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light-2;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
   }
 }
