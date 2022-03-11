@@ -12,6 +12,9 @@ margin-bottom: 8rem;
         height: auto;
     }
     &__navigation {
+        border-top: .1rem solid $color-grey-dark;
+        display: inline-block;
+        padding-top: 2rem;
 
     }
     &__list {
@@ -24,8 +27,25 @@ margin-bottom: 8rem;
         }
     }
     &__link {
-        // &:link,
-        // &:visited
+        &:link,
+        &:visited {
+            color: $color-grey-light-1;
+            background-color: $color-grey-dark-3;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+        &:hover,
+        &:active {
+            color: $color-primary;
+            box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            transform: rotate(5deg) scale(1.3);
+        }
     }
-
+&__copyright {
+    border-top: .1rem solid $color-grey-dark;
+    padding-top: 2rem;
+    float: right;
+}
 }
