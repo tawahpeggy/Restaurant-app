@@ -20,3 +20,5 @@ All rights reserved. Feel free to copy,clone or fork, and use it as you like
 ![tours section](https://user-images.githubusercontent.com/40355086/157544960-d24255fa-3551-433d-9f3f-1c146eeb224a.JPG)
 ![testimonial section](https://user-images.githubusercontent.com/40355086/157544968-78d7d5b2-3328-4b72-8a5c-9d17777f4f7e.JPG)
 ![find way section](https://user-images.githubusercontent.com/40355086/157544994-87a7eca7-57d3-4622-bcdd-dbe5733b1071.JPG)
+![nav](https://user-images.githubusercontent.com/40355086/157834814-c34fe63b-4295-44e8-be0d-f85a114287f0.JPG)
+![footer](https://user-images.githubusercontent.com/40355086/157838804-8d386901-ce2c-47d5-a044-6aba70291453.JPG)
